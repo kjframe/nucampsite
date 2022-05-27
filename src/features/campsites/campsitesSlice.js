@@ -1,8 +1,16 @@
+import { createSlice } from '@reduxjs/toolkit';
 import { CAMPSITES } from '../../app/shared/CAMPSITES';
 
-// export const selectRandomCampsite = () => {
-//     return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
-// };
+const initialState = {
+    data: CAMPSITES
+};
+
+const campsitesSlice = createSlice({
+    name: 'campsites',
+    initialState
+});
+
+export const campsitesReducer = campsitesSlice.reducer;
 
 export const selectAllCampsites = () => {
     return CAMPSITES;
