@@ -77,14 +77,14 @@ const UserLoginForm = () => {
                                 </ErrorMessage>
                             </FormGroup>
                             <FormGroup>
-                                <Label htmlFor='username'>Password</Label>
+                                <Label htmlFor='password'>Password</Label>
                                 <Field 
                                     id='password'
                                     name='password'
                                     placeholder='Password'
                                     className='form-control'
                                 />
-                                <ErrorMessage name='username'>
+                                <ErrorMessage name='password'>
                                     {(msg) => <p className='text-danger'>{msg}</p>}
                                 </ErrorMessage>
                             </FormGroup>
