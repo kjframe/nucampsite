@@ -4,7 +4,9 @@ import { baseUrl } from '../../app/shared/baseUrl';
 import { mapImageURL } from '../../utils/mapImageURL';
 
 const initialState = {
-    campsitesArray: CAMPSITES
+    campsitesArray: [],
+    isLoading: true,
+    errMsg: '';
 };
 
 const campsitesSlice = createSlice({
