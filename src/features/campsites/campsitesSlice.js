@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { CAMPSITES } from '../../app/shared/oldData/CAMPSITES';
+//import { CAMPSITES } from '../../app/shared/oldData/CAMPSITES';
+import { baseUrl } from '../../app/shared/baseUrl';
+import { mapImageURL } from '../../utils/mapImageURL';
 
 const initialState = {
     campsitesArray: CAMPSITES
