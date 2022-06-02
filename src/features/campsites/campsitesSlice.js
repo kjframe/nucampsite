@@ -1,8 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
-//import { CAMPSITES } from '../../app/shared/oldData/CAMPSITES';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+// import { CAMPSITES } from '../../app/shared/CAMPSITES';
 import { baseUrl } from '../../app/shared/baseUrl';
 import { mapImageURL } from '../../utils/mapImageURL';
-
 
 export const fetchCampsites = createAsyncThunk(
     'campsites/fetchCampsites',
