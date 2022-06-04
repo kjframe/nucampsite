@@ -24,7 +24,15 @@ const initialState = {
 const commentsSlice = createSlice({
     name: 'comments',
     initialState,
-    reducers: {},
+    reducers: {
+        addComment: (state, action) => {
+            const newComment = {
+                id: state.commentsArray.length + 1,
+                ...action.payload
+            };
+            state.commentsArray.push(newComment);
+        }
+    },
     extraReducers: {
         [fetchComments.pending]: (state) => {
             state.isLoading = true;
